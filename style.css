@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* haeder */
+
+.header {
+    background-color: #2E4D3A;
+    padding: 20px;
+}
+
+/* menu bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1); 
+    gap: 20px;
+}
+
+.logo img {
+    width: 5em;
+    height: auto;
+} 
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex; /*agar flex pada tulisan*/
+    list-style: none;
+    gap: 15px;
+}
+
+.menu ul li a {
+    color: rgb(32, 31, 31);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.bisnis a{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px; /*ukuran border */
+    border-radius: 20px; /* Membuat sisi melengkung */
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #4CAF50; 
+}
+
+.bisnis a:hover {
+    background-color: #45a049; /* Warna sedikit lebih gelap saat di-hover */
+}
+
+
+/* hero */
+.tulisan {
+    display: grid;
+    padding: 150px 50px;
+    font-size: 14px;
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .judul {
+    padding: 5px;
+    font-weight: bold;
+    color: #2E4D3A;
+}
+
+.hero button {
+    display: flex;
+    background-color: #2E4D3A;
+    color: #aec9b8;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px; /* Membuat sisi melengkung */
+    font-size: 16px;
+    justify-content: center;
+    width: 150px;
+    transition: background-color 0.3s ease;  
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #0d1f0e;
+    color: #fff;
+}
+
+/* main */
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    bottom: 45px;
+}
+
+.main .content {
+    background-color: #2E4D3A;
+    border-radius: 5px;   
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content h3 {
+    margin: 5px 0; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+/* service */
+.service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    width: 100%;
+}
+
+.item-1 {
+    grid-column: 1 / -1;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.item-1 p {
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.service .item2 {
+    padding: 20px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.item2 h3 {
+    margin: 5px 0; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item2 p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 5px 0;
+    text-align: justify;
+    color: #a3a3a3;
+} 
+
+
+/* form */
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(rgba(2, 2, 82, 0.7), rgba(0, 0, 139, 0.7)), url('luca-bravo-9l_326FISzk-unsplash.jpg');
+    background-size: cover;
+    padding: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparansi pada input */
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: #cfcfcf; /* Warna placeholder yang lebih terang */
+}
+
+.form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form button {
+    background-color: rgba(3, 3, 141, 0.8); /* Biru dengan transparansi */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: rgba(0, 0, 255, 1); /* Biru penuh saat hover */
+}
+
+.hubungi p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.hubungi {
+    color: #fff;
+    padding-left: 40px;
+}
+
+.hubungi .edit {
+    padding-top: 30px;
+}
+
+.form * {
+    position: relative;
+    z-index: 2;
+}
+
+/* footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 5em;
+    height: auto;
+}
+
+p {
+    color: #444444;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.footer span {
+    color: rgb(41, 40, 40);
+    font-weight: bold;
+}
